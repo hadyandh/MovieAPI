@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/mov_photo"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/mov_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oxregular"
+        android:gravity="center"
+        tools:text="Haruna Kawagunchi"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/mov_photo"
+        app:layout_constraintStart_toStartOf="@id/mov_photo"
+        app:layout_constraintTop_toBottomOf="@id/mov_photo"/>
+
+    <TextView
+        android:id="@+id/mov_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:fontFamily="@font/oxlight"
+        tools:text="Aizawa Miyabi"
+        app:layout_constraintEnd_toEndOf="@+id/mov_name"
+        app:layout_constraintStart_toStartOf="@id/mov_name"
+        app:layout_constraintTop_toBottomOf="@id/mov_name"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
